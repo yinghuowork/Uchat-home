@@ -1,0 +1,10 @@
+<a href="#/a">A页面</a>
+<a href="#/b">B页面</a>
+<div id="app"></div>
+<script>
+  function render() {
+    app.innerHTML = window.location.hash
+  }
+  window.addEventListener('hashchange', render)
+  render()
+</script>
